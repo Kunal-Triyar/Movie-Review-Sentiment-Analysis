@@ -7,6 +7,9 @@ import torch
 import torch.nn as nn
 import joblib
 
+import nltk
+nltk.download('stopwords')
+
 tfidf_vectorizer = joblib.load("tfidf.pkl")
 label_encoder = joblib.load("label_encoder.pkl")
 
