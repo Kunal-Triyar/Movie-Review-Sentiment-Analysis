@@ -10,6 +10,7 @@ import joblib
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('punkt_tab')
 
 tfidf_vectorizer = joblib.load("tfidf.pkl")
 label_encoder = joblib.load("label_encoder.pkl")
